@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"makefile.makefilePath": "/home/david/Documents/2dgameengine/Makefile",
+		"makefile.launchConfigurations": [
+			{
+				"cwd": "/home/david/Documents/2dgameengine",
+				"binaryPath": "/home/david/Documents/2dgameengine/gameengine",
+				"binaryArgs": []
+			}
+		],
+		"files.associations": {
+			"iostream": "cpp"
+		}
+	}
+}
