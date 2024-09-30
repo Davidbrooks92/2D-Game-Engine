@@ -1,5 +1,6 @@
 #include "ECS.h"
 #include <stdlib.h>
+#include "../Logger/Logger.h"
 
 //TODO: Implement all the fucntions from ECS.
 
@@ -21,4 +22,19 @@ std::vector<Entity> GetSystemEntities() const{
 }
 const Signature& GetComponentSignature() const{
     return componentSignature;
+}
+Entity Registry::CreateEntity() {
+    int entityId;
+
+    entityId = numEntities++;
+
+    Entity entity(entityId);
+    entitiesToBeAdded.insert(entity);
+    return entity;
+
+    Logger::Log("Entity created with is = " + std::to_string(entityId));
+}
+
+void Registry::Update() {
+
 }
